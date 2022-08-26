@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exrecise - Fale Conosco</title>
+	<meta charset="utf-8">
+	<META name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #00FFFF;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #C0C0C0;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #00FFFF;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	
+		
+</head>
+	<body>
+
+		<header>
+			
+			<h2>Talk With Us</h2>
+		</header>
+			<section>
+				<nav>
+					<ul>
+						<li><a href="06-layout.html">Home</a></li><!--i put a link to other cody where will go to open other page-->
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+				<article>
+					
+					<h1>Contact</h1>
+					<p>Fill in the fields below</p><!--to say what put in the campus-->
+
+					<form method="post"><!-- to add a campus to put name or e-mail-->
+				<div>
+						<label for="Name">Name</label><br><!--label to relaction de campus informations with de page-->
+						<input type="text" name="Name" id="Name" placeholder="type your name"><!--name next to campus-->
+				<div>
+				<div>
+						<label for="E-mail">E-mail</label><br>
+						<input type="E-mail" name="E-mail" id="E-mail" placeholder="type your name">
+				<div>
+				<div>
+						<label for="mensagem">Mensagem</label><br><!--label to relaction de campus informations with de page-->
+						<textarea type="text" name="Mensagem" id="Mensagem" rows="5"></textarea><!--rowns define the box text size to sand a mesage-->
+				<div>
+				<div>
+					<p>
+					<label>What programming languages do you know?</label>
+					<input type="radio" name="languages" value="html">HTML<!--value is for backend to know what is mean or was that the choice -->
+					<input type="radio" name="languages" value="css">CSS			
+					<input type="radio" name="languages" value="JAVASCRIPT">JAVASCRIPT
+				</p>
+	
+				<div>
+					<div>
+					<p>
+					<label>What programming languages do prefer?</label>
+					<input type="checkbox" name="languages" value="html">HTML
+					<input type="checkbox" name="languages" value="CSS">CSS			
+					<input type="checkbox" name="languages" value="JAVASCRIPT">JAVASCRIPT
+				</p>
+	
+				<div>
+
+					<div>
+						<p>
+						<label>What's your favorite color?</label>
+						<select>
+							<option value="html">Blue</option><!--selected is for to fill de box with a color name-->
+							<option value="Yellow">Yellow</option>
+							<option value="Green">Green</option>
+							<option value="" selected></option>
+						</select>
+						</p>
+
+					</div>
+
+				<div>
+					<input type="submit">
+					</form>
+
+					
+				</article>
+				<tr><!--necessary to pu a image on the page-->
+					<td><!--necessary too-->
+						<right>
+					<img  src="image/callback.jpg" alt="fale conosco" height="300" width="300"  ></right><!--image on the page-->
+					
+					</td>
+				</tr>
+
+			</section>
+				<footer><!--to put who developed the page-->
+					<p>Developed by Franck Douglas</p>
+				</footer>
+
+		
+
+	
+</body>
+</html>
